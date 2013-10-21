@@ -108,7 +108,7 @@ public class PersonPropertiesResourceAvatar extends SmpResource
         try {
 			json = URLDecoder.decode(urlJson,"UTF-8");
 		} catch (UnsupportedEncodingException e) {
-			json="[]";
+			return null;
 		}        
         JSONArray jsonArray = JSONArray.fromObject(json);
         
